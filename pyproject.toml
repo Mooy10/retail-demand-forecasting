@@ -1,0 +1,16 @@
+[project]
+name = "retail-demand-forecasting"
+version = "0.1.0"
+description = "Professional retail demand forecasting project using the M5 Walmart dataset."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+{ name = "Moises Bernal" }
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+
+[tool.setuptools]
+packages = ["src"]

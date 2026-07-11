@@ -1,0 +1,31 @@
+﻿# Example simulated inventory planning assumptions.
+# Use this file as a template. Values are simulation inputs and do not represent real Walmart data.
+
+defaults:
+  service_level_default: 0.95
+  lead_time_days_default: 7
+  review_period_days_default: 7
+  ordering_cost_default: 75.0
+  holding_cost_rate_annual_default: 0.20
+  stockout_cost_per_unit_default: 3.0
+  initial_inventory_days_default: 14
+  minimum_order_quantity_default: 1
+  order_rounding_multiple_default: 1
+  simulated_unit_cost_default: 5.0
+  days_per_year: 365
+
+overrides:
+  state_id:
+    CA:
+      service_level_default: 0.97
+  store_id:
+    CA_1:
+      lead_time_days_default: 5
+  dept_id:
+    FOODS_3:
+      stockout_cost_per_unit_default: 4.0
+  unique_id:
+    CA_1_FOODS_3:
+      initial_inventory_days_default: 10
+      minimum_order_quantity_default: 10
+      order_rounding_multiple_default: 5
