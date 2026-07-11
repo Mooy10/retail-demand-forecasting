@@ -1,0 +1,10 @@
+﻿flowchart LR
+    A["M5 Raw Data"] --> B["Ingestion"]
+    B --> C["Data Understanding"]
+    C --> D["Demand Segmentation"]
+    D --> E["Baselines"]
+    E --> F["Machine Learning"]
+    F --> G["Model Selector"]
+    G --> H["Official Forecast"]
+    H --> I["Inventory Simulation"]
+    I --> J["Streamlit Dashboard"]
