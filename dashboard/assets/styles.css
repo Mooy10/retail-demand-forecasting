@@ -1,0 +1,30 @@
+﻿/* Retail Planning & Forecasting Analytics - Streamlit styling */
+:root {
+  --rpfa-bg: #f7f9fb;
+  --rpfa-surface: #ffffff;
+  --rpfa-border: #d9e1e8;
+  --rpfa-text: #1f2933;
+  --rpfa-muted: #65758b;
+  --rpfa-teal: #008b8b;
+  --rpfa-teal-dark: #006f73;
+  --rpfa-amber: #d99000;
+  --rpfa-red: #c0392b;
+  --rpfa-green: #188a42;
+}
+.block-container {padding-top: 1.5rem; padding-bottom: 2rem; max-width: 1420px;}
+[data-testid="stSidebar"] {background: #fbfcfd; border-right: 1px solid var(--rpfa-border);}
+h1, h2, h3 {color: var(--rpfa-text); letter-spacing: 0;}
+.rpfa-subtitle {color: var(--rpfa-muted); font-size: .95rem; margin-top: -.45rem;}
+.rpfa-note {font-size: .82rem; color: #6b7280; border: 1px solid #ead7a5; background: #fff8e6; padding: .65rem .8rem; border-radius: 8px;}
+.rpfa-kpi {border: 1px solid var(--rpfa-border); border-radius: 8px; background: var(--rpfa-surface); padding: .85rem .95rem; min-height: 96px; box-shadow: 0 1px 2px rgba(15,23,42,.04);}
+.rpfa-kpi-label {font-size: .76rem; color: var(--rpfa-muted); text-transform: uppercase; font-weight: 700;}
+.rpfa-kpi-value {font-size: 1.55rem; font-weight: 750; color: var(--rpfa-text); margin-top: .25rem;}
+.rpfa-kpi-help {font-size: .78rem; color: var(--rpfa-muted); margin-top: .2rem;}
+.rpfa-card {border: 1px solid var(--rpfa-border); border-radius: 8px; background: var(--rpfa-surface); padding: 1rem; box-shadow: 0 1px 2px rgba(15,23,42,.04);}
+.rpfa-chip {display: inline-block; border-radius: 999px; padding: .16rem .55rem; font-size: .78rem; font-weight: 700; border: 1px solid var(--rpfa-border);}
+.rpfa-chip-high {background:#e9f7ef;color:#146c2e;border-color:#bfe7cc;}
+.rpfa-chip-medium {background:#fff8e6;color:#8a5a00;border-color:#f1d38a;}
+.rpfa-chip-low {background:#f4f6f8;color:#52616f;border-color:#d5dde5;}
+.rpfa-chip-risk {background:#fff1f0;color:#a12b20;border-color:#f2b7b0;}
+.rpfa-footer-note {font-size:.78rem;color:#718096;margin-top:1rem;}
+.stDataFrame {border: 1px solid var(--rpfa-border); border-radius: 8px;}
