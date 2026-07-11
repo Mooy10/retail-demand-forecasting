@@ -1,0 +1,92 @@
+﻿# Python environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python cache and tooling
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit local state
+.streamlit/
+
+# Temporary files and logs
+*.tmp
+*.temp
+*.bak
+*.log
+logs/
+tmp/
+temp/
+*.pid
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Raw and generated data files
+# Keep folder placeholders, but do not publish large local data artifacts.
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv
+*.parquet
+*.feather
+*.xlsx
+*.zip
+*.7z
+*.gz
+
+# Trained models and binary artifacts
+models/baseline/*
+!models/baseline/.gitkeep
+models/machine_learning/*
+!models/machine_learning/.gitkeep
+*.pkl
+*.pickle
+*.joblib
+*.model
+*.bin
+*.onnx
+
+# Generated reports that should stay local
+reports/figures/*
+!reports/figures/.gitkeep
+reports/*.pdf
+reports/*.html
+
+# Dashboard/demo scratch captures outside curated docs/images
+screenshots/
+recordings/
+*.mp4
+*.mov
+*.webm
+*.gif
+
+# Kaggle and local credentials
+kaggle.json
+.kaggle/
+access_token
+*access_token*
+.env
+.env.*
+
+# Local plotting cache
+.matplotlib/
