@@ -1,4 +1,4 @@
-﻿# Retail Planning & Forecasting Analytics
+# Retail Planning & Forecasting Analytics
 
 **Demand Forecasting, Inventory Simulation and Decision Support**
 
@@ -61,6 +61,9 @@ Editable source: [`docs/architecture_diagram.mmd`](docs/architecture_diagram.mmd
 
 ## Dashboard
 
+Final public portfolio audit: [docs/FINAL_PORTFOLIO_AUDIT.md](docs/FINAL_PORTFOLIO_AUDIT.md).
+
+
 Run locally with Streamlit to explore forecasts, uncertainty, model performance, inventory scenarios, and business recommendations.
 
 ![Dashboard Home](docs/images/dashboard_home.png)
@@ -117,7 +120,7 @@ retail-demand-forecasting/
 Clone the repository and create a virtual environment:
 
 ```powershell
-git clone <repository-url>
+git clone https://github.com/Mooy10/retail-demand-forecasting.git
 cd retail-demand-forecasting
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1

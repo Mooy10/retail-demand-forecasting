@@ -12,7 +12,7 @@ if str(ROOT) not in sys.path:
 from dashboard.components.alerts import portfolio_note, simulation_warning
 from dashboard.services.data_loader import load_assumptions_text
 
-st.set_page_config(page_title="Methodology", layout="wide")
+st.set_page_config(page_title="Methodology", layout="wide", initial_sidebar_state="auto")
 styles = ROOT / "dashboard" / "assets" / "styles.css"
 st.markdown(f"<style>{styles.read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
 

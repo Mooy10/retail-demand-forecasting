@@ -184,7 +184,7 @@ Important columns:
 
 ### segment_summary.parquet
 
-Summary by `demand_pattern`, including series count, demand share, average ADI, average CVÃƒâ€šÃ‚Â², and average zero-demand percentage.
+Summary by `demand_pattern`, including series count, demand share, average ADI, average CV², and average zero-demand percentage.
 
 ### abc_xyz_summary.parquet
 

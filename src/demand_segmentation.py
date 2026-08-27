@@ -428,7 +428,7 @@ def build_report(
             "## Limitations",
             "",
             "- Zero demand can mean no customer demand, stockout, product unavailability, or pre-launch periods.",
-            "- ADI and CVÂ² are historical descriptors, not causal explanations.",
+            "- ADI and CV² are historical descriptors, not causal explanations.",
             "- The analysis uses `sales_train_validation.csv`; future phases should handle validation/evaluation horizons explicitly.",
             "- XYZ thresholds are business rules based on CV: X < 0.50, Y < 1.00, Z >= 1.00. They can be tuned with planner feedback.",
             "",

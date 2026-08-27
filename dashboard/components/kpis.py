@@ -8,7 +8,7 @@ from dashboard.services.metrics_service import format_currency, format_number
 
 
 def kpi_card(label: str, value, help_text: str = "", currency: bool = False, decimals: int = 1) -> None:
-    formatted = format_currency(value) if currency else format_number(value, decimals)
+    formatted = format_currency(value) if currency else str(value) if isinstance(value, str) else format_number(value, decimals)
     st.markdown(
         f"""
         <div class="rpfa-kpi">
@@ -19,6 +19,18 @@ def kpi_card(label: str, value, help_text: str = "", currency: bool = False, dec
         """,
         unsafe_allow_html=True,
     )
+
+
+def kpi_grid(items: list[dict], columns: int = 4) -> None:
+    """Render KPI cards in balanced rows to avoid cramped wide layouts."""
+    if not items:
+        return
+    for start in range(0, len(items), columns):
+        row_items = items[start : start + columns]
+        cols = st.columns(len(row_items))
+        for col, item in zip(cols, row_items):
+            with col:
+                kpi_card(**item)
 
 
 def confidence_chip(confidence: str) -> str:

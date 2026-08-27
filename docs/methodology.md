@@ -46,12 +46,12 @@ Phase 4 classifies each item-store series without creating the full 58 million-r
 
 Demand pattern classification uses the Syntetos-Boylan framework:
 
-- Smooth: ADI < 1.32 and CVÃƒâ€šÃ‚Â² < 0.49.
-- Erratic: ADI < 1.32 and CVÃƒâ€šÃ‚Â² >= 0.49.
-- Intermittent: ADI >= 1.32 and CVÃƒâ€šÃ‚Â² < 0.49.
-- Lumpy: ADI >= 1.32 and CVÃƒâ€šÃ‚Â² >= 0.49.
+- Smooth: ADI < 1.32 and CV² < 0.49.
+- Erratic: ADI < 1.32 and CV² >= 0.49.
+- Intermittent: ADI >= 1.32 and CV² < 0.49.
+- Lumpy: ADI >= 1.32 and CV² >= 0.49.
 
-ADI is calculated as the number of historical days divided by the number of days with positive demand. CVÃƒâ€šÃ‚Â² is calculated on non-zero demand values only.
+ADI is calculated as the number of historical days divided by the number of days with positive demand. CV² is calculated on non-zero demand values only.
 
 ABC classes are assigned by sorting item-store series by total demand and calculating cumulative demand contribution:
 

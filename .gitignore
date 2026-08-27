@@ -19,7 +19,8 @@ htmlcov/
 .ipynb_checkpoints/
 
 # Streamlit local state
-.streamlit/
+.streamlit/*
+!.streamlit/config.toml
 
 # Temporary files and logs
 *.tmp
